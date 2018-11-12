@@ -6,6 +6,7 @@ RUN bash -c 'apt-get install -qy --no-install-recommends\
                 build-essential \
                 wget \
                 ca-certificates \
+                git \
         >& this.log || (cat this.log 1>&2 && exit 1)'
 
 FROM  ubuntu:16.04
@@ -20,6 +21,7 @@ RUN bash -c 'apt-get install -qy --no-install-recommends\
                 build-essential \
                 wget \
                 ca-certificates \
+                git \
         >& this.log || (cat this.log 1>&2 && exit 1)'
 
 
